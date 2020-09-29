@@ -4,10 +4,14 @@ services:
     build:
       dockerfile: Dockerfile
       context: ./nginx
-    volumes:
-      - ./nginx/html:/usr/share/nginx/html
     ports:
-      - "8080:80"
+      - "8081:80"
     environment:
       - PORT=80
-    command: nginx -g 'daemon off;'
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: ./client
+    volumes:
+      - /app/node_modules
+      - ./client:/app

@@ -1,13 +1,29 @@
 
 
+#server {
+ #   listen ${PORT} default_server;
+
+  #  charset utf-8;
+
+   # location / {
+    #    root   /usr/share/nginx/html;
+     #   index  index.html index.htm;
+    #}
+
+#}
+
+
+
+# api our services name from docker-compose.yml
+upstream api {
+    server api:3000;
+}
+
 server {
     listen ${PORT} default_server;
 
-    charset utf-8;
-
     location / {
-        root   /usr/share/nginx/html;
-        index  index.html index.htm;
+        proxy_pass http://api;
     }
 
 }
