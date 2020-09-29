@@ -4,8 +4,7 @@ services:
   - docker
 deploy:
   provider: heroku
-  strategy: git
   api_key:
     secure: BYX71J/5R9ExYEvMJMlGzo1B5lmQHrJjmXOLAKUOrRvbEj/VlXXvPEpAjNQq+ceGGhFCOycg5aknEQJrNUAS+4e9xlQSM/uzKeWpKtP4BRnuYrmFXbBMm+znqs17qbqAKccB4Rtz9Vij3OXXZmlth+Sxr1oqbUIWzSYEd1t//FFHaumgm5siyUgv/LcpohF2ueljJJ2zQAMB5wq/WS+qWAD4wn2PnS1FqutqIz65AHI8bv7tKw7BWC2F11g8DMz4b2ClBCSsEfT0u+Tv6m8FsN2ugEhRtwiLb5h5ay6Q6dpMdsbvyLRiwAjncoNfRu/BIl/0ytrf9F4LMB2MOztRvXYk6HCP/HNONBaArcDCAbqZlRSO53X8FkA+HaFDNqKGgtVBMlCTeBhC83wmO8CftJOQWkU0zS0YRMtu8YlfNbkedxx9DcHH5eVomlcUQNiC6yoE/73tXmAJtzsZ1IXNFnC7e2r/WFGh4KcJlpd6SMyxp0P4e8eM57jdx40GqfyntYFVfTWcqdnZjHhFlJe6iVo/ALyiZGIuxvt0iYRbf0/2gu26+pSoTqGyyFG4if+luekXPbsbwmEEGrcn+0Aiq5RqUKPKB7Ny6xm+zn7J8aOhfa4QY/WG/AJllJrla+wxxsH+VTPEQzLyCgIQzTIx1jlSYZjHp5q1CsoTw5vpLfs=
-  app: multidockerimages
+  app: dry-woodland-34778
   on: master
