@@ -1,5 +1,5 @@
 build:
   docker:
-    nginx: nginx/Dockerfile
+    web: nginx/Dockerfile
 run:
-  nginx: nginx -g 'daemon off;'
+  web: nginx -g 'daemon off;'
