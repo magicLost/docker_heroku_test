@@ -1,3 +1,5 @@
 build:
   docker:
     nginx: nginx/Dockerfile
+run:
+  nginx: nginx -g 'daemon off;'
