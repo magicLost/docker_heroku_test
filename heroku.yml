@@ -2,3 +2,8 @@ build:
   docker:
     web: nginx/Dockerfile
     api: client/Dockerfile
+run:
+  api:
+    command:
+      - npm run start
+    image: web
