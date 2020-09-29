@@ -14,16 +14,11 @@
 
 
 
-# api our services name from docker-compose.yml
-upstream api {
-    server api:3000;
-}
-
 server {
     listen ${PORT} default_server;
 
     location / {
-        proxy_pass http://api;
+        proxy_pass http://localhost:3000;
     }
 
 }
